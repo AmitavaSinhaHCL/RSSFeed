@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v3.1.0
       with:
         name: website
-        path: SimpleFeedReader/website
+        path: "./SimpleFeedReader"
         if-no-files-found: error
     - name: Upload dotnet test results
       uses: actions/upload-artifact@v3
