@@ -28,12 +28,12 @@ jobs:
     - name: Test
       run: dotnet test --logger "trx;LogFileName=unittests.trx" --results-directory "TestResults/"
     - name: Publish
-      run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
+      run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o SimpleFeedReader
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.0
       with:
         name: website
-        path: /SimpleFeedReader/website/
+        path: SimpleFeedReader
         if-no-files-found: error
     - name: Upload dotnet test results
       uses: actions/upload-artifact@v3
