@@ -7,8 +7,8 @@ on:
     branches: [ main ]
     
 env:
-  app-name: "SampleGithubRSSFeedwebapp"
-  rg-name: "SampleGithubRSSFeedwebapp-rg"
+  app-name: 'SampleGithubRSSFeedwebapp'
+  rg-name: 'SampleGithubRSSFeedwebapp-rg'
 
 jobs:
   build:
