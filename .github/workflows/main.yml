@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [ main ]
 env:
-  app-name: 'SampleGithubRSSFeedwebapp'
-  rg-name: 'SampleGithubRSSFeedwebapp-rg'
+  app-name: 'SimpleAppGithub'
+  rg-name: 'SimpleApp-rg'
 
 jobs:
   build:
