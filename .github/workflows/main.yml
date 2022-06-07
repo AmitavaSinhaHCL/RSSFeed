@@ -88,7 +88,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.app-name }}
-        slot-name: staging
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: './binaries'
 
     - name: az cli logout
